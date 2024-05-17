@@ -25,7 +25,7 @@ ul, ol {
 }
 
 .section {
-margin-top: 120px;
+padding: 120px 0;
 }
 
 .header {
@@ -126,13 +126,13 @@ gap: 40px;
 
 .box-model {
 background: #2e2f42;
-width: 100%;
-height: 600px;
-
+padding: 188px 0;
+margin-right: auto;
+margin-left: auto;
 }
 
 .box-service {
-display: block;
+display: inline;
 align-items: center;
 }
 
@@ -143,11 +143,8 @@ line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
 color: #fff;
-width: 496px;
-height: 120px;
-padding-top: 188px;
-padding-bottom: 48px;
-margin: auto;
+max-width: 496px;
+margin: 0 auto;
 }
 
 
@@ -159,19 +156,23 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
-margin: 0 auto 188px;
 display: block;
 align-items: center;
-
+min-width: 169px;
+height: 56px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin: 48px auto 0;
 }
 
-.button:hover
+.button:hover 
 .button:focus {
 background-color: #404BBF;
 }
 
 .button:active {
-background-color:#4D5AE5;
+background-color: #4D5AE5;
 }
 
 .advantages-visually-hidden {
@@ -187,40 +188,43 @@ background-color:#4D5AE5;
     overflow: hidden;
 }
 
+.advantages-section {
+padding: 120px 0 120px;
+}
+
 .advantages-list {
 display: flex;
-padding-top: 120px;
-padding-bottom: 120px;
 gap: 24px;
 }
 
-.advantages-item {
-padding-left: 0;
-margin: 0;
-}
 
 .advantages {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 0;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2e2f42;
+margin-bottom: 0;
+width: calc((100% - 72px) / 4);
 }
 
 .advantages-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    margin-top: 8px;
+font-weight: 400;
+font-size: 16px;
+ line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+margin-top: 8px;
 }
 
 .our-team {
 color: #2e2f42;
 background: #f4f4fd;
+padding: 120px 0;
+}
 
+.list-img {
+display: block;
 }
 
 .team-text {
@@ -231,7 +235,6 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2e2f42;
-padding-top: 120px;
 }
 
 .team-list {
@@ -243,6 +246,7 @@ margin-bottom: 0;
 max-width: 264px;
 max-height: 380px;
 padding-bottom: 120px;
+width: calc((100% - 72px) / 4);
 }
 
 .team-images {
@@ -283,7 +287,6 @@ background-color: #FFFFFF;
 .portfolio-list {
 display: flex;
 flex-wrap: wrap;
-gap: 24px;
 margin-top: 72px;
 }
 
