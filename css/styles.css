@@ -24,6 +24,10 @@ ul, ol {
  margin: 0 auto;
 }
 
+.section {
+margin-top: 120px;
+}
+
 .header {
 border-bottom: 1px solid #e7e9fc;
 }
@@ -216,7 +220,6 @@ margin: 0;
 .our-team {
 color: #2e2f42;
 background: #f4f4fd;
-padding-top: 120px;
 
 }
 
@@ -263,10 +266,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 text-align: center;
-}
-
-.our-portfolio {
-margin-top: 120px;
 }
 
 .portfolio {
