@@ -18,6 +18,26 @@ ul, ol {
     text-decoration: none;
 }
 
+.container {
+ width: 1158px;
+ padding: 0 15px;
+ margin: 0 auto;
+}
+
+.header {
+border-bottom: 1px solid #e7e9fc;
+}
+
+.heder-container {
+display: flex;
+align-items: center;
+}
+
+.navigation {
+display: flex;
+align-items: center;    
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -27,6 +47,7 @@ ul, ol {
     text-transform: uppercase;
     text-decoration: none;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .accent {
@@ -38,7 +59,12 @@ ul, ol {
     color: #2e2f42;
 }
 
-.link {
+.nav-list {
+display: flex;
+gap: 40px;
+}
+
+.nav-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -48,6 +74,10 @@ ul, ol {
     margin: 0;
     text-decoration: none;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+    width: calc((100%-72px) / 4);
+
 }
 
 .link:hover,
@@ -59,11 +89,17 @@ color: #404BBF;
 color: #2E2F42;
 }
 
-.contacts {
+.address {
 font-style: normal;
+margin-left: auto;
 }
 
-.address{
+.address-list {
+display: flex;
+gap: 40px;
+}
+
+.address-link{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -86,6 +122,14 @@ font-style: normal;
 
 .box-model {
 background: #2e2f42;
+width: 100%;
+height: 600px;
+
+}
+
+.box-service {
+display: block;
+align-items: center;
 }
 
 .title {
@@ -95,7 +139,13 @@ line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
 color: #fff;
+width: 496px;
+height: 120px;
+padding-top: 188px;
+padding-bottom: 48px;
+margin: auto;
 }
+
 
 .button  {
 font-family: "Roboto", sans-serif;
@@ -105,10 +155,13 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
-cursor: pointer;
+margin: 0 auto 188px;
+display: block;
+align-items: center;
+
 }
 
-.button:hover,
+.button:hover
 .button:focus {
 background-color: #404BBF;
 }
@@ -117,59 +170,103 @@ background-color: #404BBF;
 background-color:#4D5AE5;
 }
 
-.section {
-color: #2e2f42;
-background: #f4f4fd;
+.advantages-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-list {
+display: flex;
+padding-top: 120px;
+padding-bottom: 120px;
+gap: 24px;
+}
+
+.advantages-item {
+padding-left: 0;
+margin: 0;
 }
 
 .advantages {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 0;
 }
 
 .advantages-text {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-top: 8px;
 }
 
-.images {
+.our-team {
+color: #2e2f42;
+background: #f4f4fd;
+padding-top: 120px;
+
+}
+
+.team-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.team-list {
+display: flex;
+align-items: center;
+gap: 24px;
+padding-top: 72px;
+margin-bottom: 0;
+max-width: 264px;
+max-height: 380px;
+padding-bottom: 120px;
+}
+
+.team-images {
 color:#2e2f42;
 background-color: #FFFFFF;
 }
 
 
-.team {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: #2e2f42;
-} 
-
-
-
-.name {
+.team-name {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+text-align: center;
 }
 
-.profession {
+.team-profession {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+text-align: center;
+}
+
+.our-portfolio {
+margin-top: 120px;
 }
 
 .portfolio {
@@ -183,7 +280,20 @@ color: #2e2f42;
 background-color: #FFFFFF;
 }
 
-.projects {
+.portfolio-list {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+margin-top: 72px;
+}
+
+.portfolio-item {
+padding-left: 0;
+margin: 0;
+}
+
+
+.portfolio-projects {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -191,7 +301,7 @@ letter-spacing: 0.02em;
 color: #2e2f42;
 }
 
-.project-list {
+.portfolio-projects-text {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -202,6 +312,15 @@ background-color: #FFFFFF
 
 .background {
 background: #2e2f42;
+margin-top: 120px;
+width: 100%;
+height: 312px;
+}
+
+.footer-info {
+display: block;
+padding-top: 100px;
+
 }
 
 .accent-logo {
@@ -210,6 +329,7 @@ font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 color: #f4f4fd;
+
 }
 
 .promotion {
@@ -218,6 +338,10 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+margin-top: 16px;
+padding-bottom: 100px;
+width: 264px;
+height: 72px;
 }
 
 
