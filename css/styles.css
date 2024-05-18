@@ -373,4 +373,7 @@ width: 264px;
 height: 72px;
 }
 
-
+.lodo-footer{
+display: inline-block;
+margin-bottom: 16px;
+}
