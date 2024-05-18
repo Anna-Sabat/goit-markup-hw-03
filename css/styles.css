@@ -348,15 +348,30 @@ padding: 100px 0
 .footer-info {
 display: block;
 padding-top: 100px;
+}
 
+.lodo-footer {
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-decoration: none;
+color: #4d5ae5;
+display: inline-block;
+margin-bottom: 16px;
 }
 
 .accent-logo {
+font-family: "Raleway", sans-serif;
 font-weight: 700;
 font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 color: #f4f4fd;
+text-transform: uppercase;
+text-decoration: none;
 display: inline-block;
 margin-bottom: 16px;
 }
@@ -373,7 +388,3 @@ width: 264px;
 height: 72px;
 }
 
-.lodo-footer{
-display: inline-block;
-margin-bottom: 16px;
-}
