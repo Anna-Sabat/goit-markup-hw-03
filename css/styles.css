@@ -178,7 +178,7 @@ background-color: #404BBF;
 background-color: #4D5AE5;
 }
 
-.advantages-visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -189,7 +189,6 @@ background-color: #4D5AE5;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-    margin-bottom: 8px;
 }
 
 .advantages-section {
@@ -211,6 +210,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .advantages-text {
